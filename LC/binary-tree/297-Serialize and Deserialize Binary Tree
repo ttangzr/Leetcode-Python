@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/07 16:26 PM
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Codec:
+
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
+        # method-1: DFS
+        if not root:
+            return "None"
+        left = self.serialize(root.left)
+        right = self.serialize(root.right)
+        return str(root.val) + ',' + left + ',' + right
+        
+        # method-2: BFS
+        if not root:
+            return "None"
+        res = ""
+        stack = deque([root])
+        while stack:
+            for _ in range(len(stack)):
+                node = stack.popleft()
+                if not node:
+                    res += "None,"
+                    continue
+                res += str(node.val) + ","
+                stack.append(node.left)
+                stack.append(node.right)
+        return res[:-1]
+
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: TreeNode
+        """
+        # method-1: DFS
+        data_list = data.split(",")
+        if data_list[0] == "None":
+            return None
+        def dfs(q):
+            val = q.popleft()
+            if val == "None":
+                return None
+            root = TreeNode(int(val))
+            root.left = dfs(q)
+            root.right = dfs(q)
+            return root
+        return dfs(deque(data_list))    
+        
+        # method-2: BFS
+        data_list = data.split(",")
+        if data_list[0] == "None":
+            return []
+        root = TreeNode(int(data_list[0]))
+        stack = deque([root])
+        cur = 1 # pointer
+        while cur < len(data_list):
+            node = stack.popleft()
+            l_val = data_list[cur]
+            r_val = data_list[cur + 1]
+            if l_val != "None":
+                node_left = TreeNode(int(l_val))
+                node.left = node_left
+                stack.append(node_left)
+            if r_val != "None":
+                node_right  = TreeNode(int(r_val))
+                node.right = node_right
+                stack.append(node_right)
+            cur += 2    # 一对子节点
+        return root
+        
+
+        
+
+# Your Codec object will be instantiated and called as such:
+# ser = Codec()
+# deser = Codec()
+# ans = deser.deserialize(ser.serialize(root))
