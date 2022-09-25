@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/12 11:24 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 122-Best Time to Buy and Sell Stock II.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 from typing import List

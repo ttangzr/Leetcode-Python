@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/25 10:27 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 744-Find Smallest Letter Greater Than Target.py
-# @Software: PyCharm
-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:19
 
 from typing import List
 

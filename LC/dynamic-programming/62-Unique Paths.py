@@ -2,10 +2,6 @@
 # @Author  : Zhirong Tang
 # @Time    : 2022/1/10 9:28 AM
 
-
-from typing import List
-
-
 class Solution:
     def uniquePaths(self, m: int, n: int):
         # method-1: DP

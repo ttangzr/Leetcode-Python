@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/27 9:07 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 153-Find Minimum in Rotated Sorted Array.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 from typing import List
 

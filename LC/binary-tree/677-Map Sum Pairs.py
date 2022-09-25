@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/31 8:57 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 677-Map Sum Pairs.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class MapSum:
     def __init__(self):

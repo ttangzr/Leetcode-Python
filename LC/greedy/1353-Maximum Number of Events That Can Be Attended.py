@@ -9,21 +9,21 @@ import heapq
 
 class Solution:
     def maxEvents(self, events: List[List[int]]):
-        # method-1: greedy
+        # method-1: greedy + 优先队列
         # 第i天，end小的优先开会为最优
         # 按开始时间降序
-        events.sort(reverse=True)
-        n = max(j for i in events for j in i)   # 最晚的时间
+        events.sort(key=lambda x: x[0], reverse=True)
+        n = max(j for i in events for j in i)   # 最晚end时间
         heap = []
         res = 0
         for i in range(1, n + 1):
-            # 将能开的会议都pop出来
+            # 按start, 将能开的会议都pop出来，给heap
             while events and events[-1][0] <= i:
                 heapq.heappush(heap, events.pop()[1])
-            # end小的优先pop（大根堆）
+            # end小的优先pop（小根堆）
             while heap:
-                earliest = heapq.heappop(heap,)
-                if earliest >= i:
+                earliest = heapq.heappop(heap)
+                if earliest >= i:   # 结束前
                     res += 1
                     break
         return res

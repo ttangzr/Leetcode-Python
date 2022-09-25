@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/1 8:53 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 225-Implement Stack using Queues.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from collections import deque
 

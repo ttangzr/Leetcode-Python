@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/26 12:39 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 540-Single Element in a Sorted Array.py
-# @Software: PyCharm
-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:19
 
 from typing import List
 

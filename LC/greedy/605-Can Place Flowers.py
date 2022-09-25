@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/15 2:28 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 605-Can Place Flowers.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 from typing import List

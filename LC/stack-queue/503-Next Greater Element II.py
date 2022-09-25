@@ -1,27 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/2 8:43 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 503-Next Greater Element II.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 from typing import List
 
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
         # method-1: 单调栈
-        size = len(nums)
-        ans = [0] * size
-        stack = list()
+        n = len(nums)
+        ans = [0] * n
+        stack = []
         nums2 = nums + nums
         for i in range(len(nums2)):
             cur = nums2[i]
             while stack and cur > nums[stack[-1]]:
-                prev_index = stack.pop()
-                ans[prev_index] = cur
-            if i <= size - 1:
+                prev = stack.pop()
+                ans[prev] = cur
+            if i < n:
+                # 第二部分不做append,仅做匹配使用
                 stack.append(i)
-        # 没找到的置为-1
         for i in stack:
             ans[i] = -1
         return ans

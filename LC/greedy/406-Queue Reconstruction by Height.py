@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/10/18 8:44 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 406-Queue Reconstruction by Height.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 from typing import List

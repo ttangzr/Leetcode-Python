@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/1 8:25 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 232-Implement Queue using Stacks.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class MyQueue:
     def __init__(self):

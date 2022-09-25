@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/9/2 8:23 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 167-Two Sum II - Input array is sorted.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from typing import List
 

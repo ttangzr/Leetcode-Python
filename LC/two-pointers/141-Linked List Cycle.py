@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/9/7 11:17 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 141-Linked List Cycle.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 # Definition for singly-linked list.

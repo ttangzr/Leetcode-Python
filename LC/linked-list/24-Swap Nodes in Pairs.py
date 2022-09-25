@@ -1,8 +1,5 @@
-# @Time    : 2020/6/19 20:59
-# @Author  : T-
-# @Site    : 
-# @File    : 24-Swap Nodes in Pairs.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from utils import ListNode
 

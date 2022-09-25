@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/18 9:30 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 392-Is Subsequence.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:

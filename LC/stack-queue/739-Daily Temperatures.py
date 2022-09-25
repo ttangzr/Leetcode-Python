@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/1 5:05 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 739-Daily Temperatures.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from typing import List
 

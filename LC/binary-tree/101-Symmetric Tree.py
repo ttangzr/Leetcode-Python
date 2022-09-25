@@ -1,9 +1,7 @@
-# @Time    : 2020/9/16 10:21
-# @Author  : T-
-# @Site    : 
-# @File    : 101-Symmetric Tree.py
-# @Software: PyCharm
-# Definition for a binary tree node.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:19
 class TreeNode:
     def __init__(self, x):
         self.val = x

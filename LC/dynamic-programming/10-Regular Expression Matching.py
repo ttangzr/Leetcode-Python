@@ -9,7 +9,7 @@ class Solution:
         # f[i][j]表示s前i个字符与p前j个字符能否匹配
         # 1) j为字母，f[i][j] = f[i-1][j-1] if s[i]=p[j]
         # 2) j为*,   f[i][j] = f[i-1][j]|f[i][j-2] if s[i]=p[j-1] (丢掉一个字符继续匹配）
-        #                   =  f[i][j-2]           if s[i]!=p[j]
+        #                   =  f[i][j-2]           if s[i]!=p[j-1]
         # 3) j为.，  f[i][j] = f[i-1][j-1]
         m, n = len(s), len(p)
         f = [[False] * (n + 1) for _ in range(m + 1)]
@@ -17,8 +17,9 @@ class Solution:
         for i in range(m + 1):
             for j in range(1, n + 1):
                 if p[j - 1] == '*':
-                    # 对j-2个字符匹配任意次
+                    # 不匹配该字符，对j-2个字符匹配任意次
                     f[i][j] |= f[i][j - 2]
+                    # 匹配s末尾的一个字符
                     if self.match(s, p, i, j -1):
                         f[i][j] |= f[i - 1][j]
                 else:

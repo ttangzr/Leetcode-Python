@@ -1,8 +1,7 @@
-# @Time    : 2020/9/19 9:11
-# @Author  : T-
-# @Site    : 
-# @File    : 111-Minimum Depth of Binary Tree.py
-# @Software: PyCharm
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:20
 
 # Definition for a binary tree node.
 class TreeNode:

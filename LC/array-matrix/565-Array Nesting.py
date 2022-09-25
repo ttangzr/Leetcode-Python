@@ -16,22 +16,18 @@ class Solution:
         visited = []
         for i in range(len(nums)):
             if nums[i] not in visited:
-                checkNum, S = self.check(nums[i], nums)
-                visited += S
-                res = max(checkNum, res)
+                max_cnt, arr = self.search(nums[i], nums)
+                visited += arr
+                res = max(max_cnt, res)
         return res
 
-
-
-    def check(self, idx, nums):
-        cnt = 0
-        S = list()
-        while idx not in S:
-            S.append(idx)
-            idx = nums[idx]
-            cnt += 1
-        return cnt, S
-    
+    def search(self, i, nums):
+        max_cnt, res = 0, []
+        while i not in res:
+            res.append(i)
+            i = nums[i]
+            max_cnt += 1
+        return max_cnt, res
         
 
 if __name__ == "__main__":

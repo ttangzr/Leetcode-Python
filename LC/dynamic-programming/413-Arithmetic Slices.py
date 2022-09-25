@@ -9,6 +9,7 @@ from typing import List
 class Solution:
     def numberOfArithmeticSlices(self, nums: List[int]) -> int:
         # method-1: DP
+        # nums[i-2] + nums[i] = 2*nums[i-1]
         # dp[i] = dp[i-1] + 1
         n = len(nums)
         if n < 3:

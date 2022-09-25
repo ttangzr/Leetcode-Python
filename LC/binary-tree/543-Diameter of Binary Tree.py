@@ -1,8 +1,5 @@
-# @Time    : 2020/8/11 11:33
-# @Author  : T-
-# @Site    : 
-# @File    : 543-Diameter of Binary Tree.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for a binary tree node.
 # class TreeNode:

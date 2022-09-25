@@ -8,13 +8,11 @@ from typing import List
 
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
-        # method-1: DP
-        # 存在问题
+        # method-1: DP, 0-1背包，存在问题
         # [0,i]取若干个整数等于j
         # j >= num: dp[i][j] = dp[i-1][j] | dp[j-num][j]
         # j < num: dp[i][j] = dp[i-1][j]
         # dp[i][0] = True，不需要选，就能满足要求
-        # dp[1][nums[0]] = True, 只有nums[0]可选
         total = sum(nums)
         n = len(nums)
         W = total // 2

@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/20 8:30 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 665-Non-decreasing Array.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from typing import List
 

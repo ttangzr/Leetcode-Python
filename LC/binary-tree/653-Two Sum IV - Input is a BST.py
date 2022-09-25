@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/24 9:04 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 653-Two Sum IV - Input is a BST.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for a binary tree node.
 class TreeNode:

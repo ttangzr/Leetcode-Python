@@ -1,8 +1,5 @@
-# @Time    : 2020/9/6 9:38
-# @Author  : T-
-# @Site    : 
-# @File    : 617-Merge Two Binary Trees.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for a binary tree node.
 class TreeNode:

@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/30 4:20 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 501-Find Mode in Binary Search Tree.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from typing import List
 

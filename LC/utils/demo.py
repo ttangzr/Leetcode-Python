@@ -340,6 +340,42 @@ class Solution1:
             else:
                 col -= 1
         return False
+    
+class Solution:
+    def knapsack(self, W, N, weights, values):
+        """
+        W : 背包总体积
+        N : 物品数量
+        weights : N个物品的体积
+        values : N个物品的价值
+        """
+        # dp[i][j]: 前 i 件物品体积不超过 j 的情况下能达到的最大价值
+        dp = [[0] * (W + 1) for _ in range(N + 1)]
+        for i in range(1, N + 1):
+            w, v = weights[i - 1], values(i - 1)
+            for j in range(1, W + 1):
+                if j >= w:
+                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + v)
+                else:
+                    dp[i][j] = dp[i - 1][j]
+        return dp[N][W]
+    
+class Solution:
+    def knapsack(self, W, N, weights, values):
+        """
+        W : 背包总体积
+        N : 物品数量
+        weights : N个物品的体积
+        values : N个物品的价值
+        """
+        # dp[i][j]: 前 i 件物品体积不超过 j 的情况下能达到的最大价值
+        dp = [0] * (W + 1)
+        for i in range(1, N + 1):
+            w, v = weights[i - 1], values(i - 1)
+            for j in range(W, w - 1, -1):   # j in [w, W]
+                dp[j] = max(dp[j], dp[j - w] + v)
+        return dp[W]
+
 
 if __name__ == "__main__":
     obj = Solution1()

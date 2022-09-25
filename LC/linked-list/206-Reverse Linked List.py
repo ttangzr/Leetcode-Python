@@ -1,8 +1,5 @@
-# @Time    : 2020/6/18 16:41
-# @Author  : T-
-# @Site    : 
-# @File    : 206. Reverse Linked List.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for singly-linked list.
 class ListNode:

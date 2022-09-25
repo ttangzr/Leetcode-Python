@@ -1,26 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/10 9:50 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 696-Count Binary Substrings.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class Solution:
     def countBinarySubstrings(self, s: str):
-        # method-1: 字符分组
+        # method-1: 字符分组/双指针
         pre, cur, count = 0, 1, 0
         for i in range(1, len(s)):
             if s[i] == s[i-1]:
                 cur += 1
             else:
                 pre = cur
-                cur = 1
+                cur = 1 # reset
             if pre >= cur:
                 count += 1
         return count
 
-        #
+        # method-2: 前后分组/双指针
         cur = 0
         n = len(s)
         last, ans = 0, 0

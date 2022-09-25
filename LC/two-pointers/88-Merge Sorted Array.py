@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/9/6 4:12 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 88-Merge Sorted Array.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from typing import List
 

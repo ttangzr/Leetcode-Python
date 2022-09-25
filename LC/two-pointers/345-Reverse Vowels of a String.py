@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/9/6 8:51 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 345-Reverse Vowels of a String.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 class Solution:

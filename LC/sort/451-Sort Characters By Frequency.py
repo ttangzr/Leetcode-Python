@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/10/8 8:29 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 451-Sort Characters By Frequency.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 class Solution:

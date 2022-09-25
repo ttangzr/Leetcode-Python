@@ -8,8 +8,7 @@ from typing import List
 
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        # method-1: DP(opt)
-        # 完全背包问题，存在问题，涉及放入顺序，物品放最内存循环
+        # method-1: DP, 完全背包问题，存在问题，涉及顺序，物品放最内层循环
         n = len(s)
         dp = [False] * (n + 1)
         dp[0] = True

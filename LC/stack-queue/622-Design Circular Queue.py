@@ -2,48 +2,35 @@
 # @Author  : Zhirong Tang
 # @Time    : 2022/3/20 10:31
 
-from threading import Lock
 class MyCircularQueue:
-
     def __init__(self, k: int):
-        self.queue = [0] * k
-        self.head = 0
-        # tail = (head + count - 1) % capacity
-        self.count = 0
-        self.capacity = k
-        self.lock = Lock()
+        self.front = self.rear = 0
+        self.queue = [0] * (k + 1)    # capacity + 1
 
     def enQueue(self, value: int) -> bool:
-        # self.lock.acquire() 
         if self.isFull():
             return False
-        self.queue[(self.head + self.count) % self.capacity] = value
-        self.count += 1
-        # self.lock.release()
+        self.queue[self.rear] = value
+        self.rear = (self.rear + 1) % len(self.queue)
         return True
 
     def deQueue(self) -> bool:
         if self.isEmpty():
             return False
-        self.head = (self.head + 1) % self.capacity
-        self.count -= 1
+        self.front = (self.front + 1) % len(self.queue)
         return True
 
     def Front(self) -> int:
-        if self.isEmpty():
-            return -1
-        return self.queue[self.head]
+        return -1 if self.isEmpty() else self.queue[self.front]
 
     def Rear(self) -> int:
-        if self.isEmpty():
-            return -1
-        return self.queue[(self.head + self.count - 1) % self.capacity]
+        return -1 if self.isEmpty() else self.queue[(self.rear - 1) % len(self.queue)]
 
     def isEmpty(self) -> bool:
-        return self.count == 0
+        return self.front == self.rear
 
     def isFull(self) -> bool:
-        return self.count == self.capacity
+        return self.front == ((self.rear + 1) % len(self.queue))
 
 
 if __name__ == '__main__':

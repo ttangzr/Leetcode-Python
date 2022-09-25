@@ -1,27 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/5/25 12:19 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 697-Degree of an Array.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 from typing import  List
 
-
 class Solution:
     def findShortestSubArray(self, nums: List[int]) -> int:
-        # method-1: hashmap(count, left, right)
-        map = {}
+        # method-1: hashmap
+        # (count, left, right)
+        hmap = {}
         for i, num in enumerate(nums):
-            if num in map:
-                map[num][0] += 1
-                map[num][2] = i
+            if num in hmap:
+                hmap[num][0] += 1
+                hmap[num][2] = i
             else:
-                map[num] = [1, i, i]
+                hmap[num] = [1, i, i]
 
         maxNum = minLen = 0
-        for count, left, right in map.values():
+        for count, left, right in hmap.values():
             if maxNum < count:
                 maxNum = count
                 minLen = right - left + 1

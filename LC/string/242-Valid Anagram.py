@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/6 8:40 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 242-Valid Anagram.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:

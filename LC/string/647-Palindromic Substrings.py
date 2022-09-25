@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/9 9:05 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 647-Palindromic Substrings.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class Solution:
     def __init__(self):

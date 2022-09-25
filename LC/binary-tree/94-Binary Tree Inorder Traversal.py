@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/2 9:20 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 94-Binary Tree Inorder Traversal.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:19
 
 from typing import List
 

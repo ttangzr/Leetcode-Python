@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/27 9:46 下午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 34-Find First and Last Position of Element in Sorted Array.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 from typing import List
-
 
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:

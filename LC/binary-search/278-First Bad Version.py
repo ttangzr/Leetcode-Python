@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/27 8:59 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 278-First Bad Version.py
-# @Software: PyCharm
-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 # The isBadVersion API is already defined for you.
 # @param version, an integer

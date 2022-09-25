@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/8/7 7:44 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 210-Course Schedule II.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from typing import List
 from collections import defaultdict, deque
@@ -12,30 +9,30 @@ from collections import defaultdict, deque
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         # method-1: DFS
+        NOT_SEARCH, SEARCHING, SEARCHED = 0, 1, 2
         edges = defaultdict(list)
-        visited = [0] * numCourses
+        visited = [NOT_SEARCH] * numCourses
         result = []
-        valid = True
 
         for second, first in prerequisites:
             edges[first].append(second)
 
-        def dfs(course: int):
-            nonlocal valid
-            visited[course] = 1
-            for successor in edges[course]:
-                if visited[successor] == 0:
-                    dfs(successor)
-                elif visited[successor] == 1:
-                    valid = False
-            visited[course] = 2
+        def dfs(course):
+            visited[course] = SEARCHING
+            for next in edges[course]:
+                if visited[next] == NOT_SEARCH:
+                    if not dfs(next):
+                        return False
+                elif visited[next] == SEARCHING:
+                    return False
+            visited[course] = SEARCHED
             result.append(course)
+            return True
 
         for course_idx in range(numCourses):
-            if valid and not visited[course_idx]:
-                dfs(course_idx)
-            elif not valid:
-                return []
+            if visited[course_idx] == NOT_SEARCH:
+                if not dfs(course_idx):
+                    return []
         return result[::-1]
 
         # method-2: 拓扑排序
@@ -53,14 +50,11 @@ class Solution:
             course = queue.popleft()
             visited += 1
             result.append(course)
-            for successor in edges[course]:
-                indeg[successor] -= 1
-                if indeg[successor] == 0:
-                    queue.append(successor)
-        if visited == numCourses:
-            return result
-        else:
-            return []
+            for next in edges[course]:
+                indeg[next] -= 1
+                if indeg[next] == 0:
+                    queue.append(next)
+        return result if visited == numCourses else []
 
 
 if __name__ == "__main__":

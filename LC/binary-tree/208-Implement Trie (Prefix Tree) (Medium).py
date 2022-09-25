@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/30 4:42 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 208-Implement Trie (Prefix Tree) (Medium).py
-# @Software: PyCharm
-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:20
 class Trie:
     def __init__(self):
         self.trie = {}

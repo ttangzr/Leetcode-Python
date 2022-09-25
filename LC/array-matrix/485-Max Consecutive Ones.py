@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/13 2:18 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 485-Max Consecutive Ones.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:17
 
 from typing import List
-
 
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:

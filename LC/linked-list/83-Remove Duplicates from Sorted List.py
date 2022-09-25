@@ -1,8 +1,5 @@
-# @Time    : 2020/6/19 17:34
-# @Author  : T-
-# @Site    : 
-# @File    : 83-Remove Duplicates from Sorted List.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 # Definition for singly-linked list.

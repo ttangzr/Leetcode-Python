@@ -28,9 +28,11 @@ class Solution:
 
         # method-2: 最小堆/优先队列
         intervals.sort(key=lambda x: x[0])
+        # 先放置end
         room = []
         heapq.heappush(room, intervals[0][1])
         for itv in intervals[1:]:
+            # end比start早，说明会议结束，pop
             if room[0] <= itv[0]:
                 heapq.heappop(room)
             heapq.heappush(room, itv[1])

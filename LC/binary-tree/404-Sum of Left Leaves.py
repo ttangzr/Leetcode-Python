@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/2/23 9:19 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 404-Sum of Left Leaves.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for a binary tree node.
 class TreeNode:

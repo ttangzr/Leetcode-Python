@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/13 8:36 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 109-Convert Sorted List to Binary Search Tree.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:20
 
 # Definition for singly-linked list.
 class ListNode:

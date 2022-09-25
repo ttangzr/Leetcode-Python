@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/14 8:52 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 240-Search a 2D Matrix II.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 from typing import List
 

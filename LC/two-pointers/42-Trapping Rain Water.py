@@ -61,24 +61,23 @@ class Solution:
         return ans
 
         # method-4: 单调栈
-        # [left, top] -> height[left] ≥ height[top]
-        # height[i] > height[top]
+        # 入栈元素递减[left, i] -> height[left] ≥ height[i]
+        # 出栈则递增,有height[i] > height[top]，top为当前元素
         # w: i - left - 1, h: min(height[left], height[right]) - height[top]
         stack = list()
         res = 0
         n = len(height)
-
-        for i, h in enumerate(height):
-            while stack and h > height[stack[-1]]:
-                top = stack.pop()
-                if not stack:
+        for right_i, right_h in enumerate(height):
+            while stack and right_h > height[stack[-1]]:
+                cur_i = stack.pop()
+                if not stack:  # 保证有left
                     break
-                left = stack[-1]
-                curr_width = i - left - 1
-                # 木桶效应
-                curr_height = min(height[left], height[i]) - height[top]
-                res += curr_width * curr_height
-            stack.append(i)
+                left_i = stack[-1]
+                cur_width = right_i - left_i - 1
+                # 木桶原理
+                cur_height = min(height[left_i], height[right_i]) - height[cur_i]
+                res += cur_width * cur_height                
+            stack.append(right_i)
         return res
 
 

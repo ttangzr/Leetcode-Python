@@ -6,10 +6,10 @@
 class Solution:
     def countPrimes(self, n: int) -> int:
         # method-1: enumerate (timeout)
-        # ans = 0
-        # for i in range(2, n):
-        #     ans += self.isPrime(i)
-        # return ans
+        ans = 0
+        for i in range(2, n):
+            ans += self.isPrime(i)
+        return ans
 
         # method-2: 埃氏筛
         is_prime = [1] * n

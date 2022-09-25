@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/5/6 11:24 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 645-Set Mismatch.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 from typing import List
 

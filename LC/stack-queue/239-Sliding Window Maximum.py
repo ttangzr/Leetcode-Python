@@ -26,8 +26,8 @@ class Solution:
 
         # method-2: 单调队列
         n = len(nums)
-        q = deque()
-        # 第一个窗口内单调
+        q = deque() # 队列内元素递减
+        # 第一个窗口内单调，求出基础数字
         for i in range(k):
             while q and nums[i] >= nums[q[-1]]:
                q.pop()
@@ -35,6 +35,7 @@ class Solution:
         # 后续滑动窗口单调
         ans = [nums[q[0]]]
         for i in range(k, n):
+            # 先保证q的单调性
             while q and nums[i] >= nums[q[-1]]:
                 q.pop()
             q.append(i)
@@ -42,8 +43,6 @@ class Solution:
                 q.popleft()
             ans.append(nums[q[0]])
         return ans
-
-
 
 
 if __name__ == '__main__':

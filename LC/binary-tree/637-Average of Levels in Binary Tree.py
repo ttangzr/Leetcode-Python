@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/2/28 7:22 下午
-# @Author  : T-
-# @Site    : 
-# @File    : 637-Average of Levels in Binary Tree.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for a binary tree node.
 # class TreeNode:

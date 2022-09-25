@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/4/10 9:15 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 9-Palindrome Number.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        # method-1: convert int2string to
+        # method-1: 中心拓展
         if x < 0:
             return False
         s = str(x)

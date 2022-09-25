@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/3/2 9:05 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 145-Binary Tree Postorder Traversal.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:20
 
 # Definition for a binary tree node.
 # class TreeNode:

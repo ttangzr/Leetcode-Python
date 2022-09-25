@@ -8,20 +8,20 @@ from collections import deque
 
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
+        # method-1: queue + BFS
         if arr[start] == 0:
             return True
-
         n = len(arr)
-        visited = {start}
-        q = deque([start])
-        while q:
-            idx = q.popleft()
-            for i in [idx - arr[idx], idx + arr[idx]]:
-                if 0 <= i < n and i not in visited:
-                    if arr[i] == 0:
+        visited = set([start])
+        que = deque([start])
+        while que:
+            cur = que.popleft()
+            for nex in [cur - arr[cur], cur + arr[cur]]:
+                if 0 <= nex < n and nex not in visited:
+                    if arr[nex] == 0:
                         return True
-                    visited.add(i)
-                    q.append(i)
+                    visited.add(nex)
+                    que.append(nex)
         return False
 
 

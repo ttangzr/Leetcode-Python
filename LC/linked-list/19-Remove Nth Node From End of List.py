@@ -1,8 +1,5 @@
-# @Time    : 2020/6/19 20:13
-# @Author  : T-
-# @Site    : 
-# @File    : 19-Remove Nth Node From End of List.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for singly-linked list.
 class ListNode:

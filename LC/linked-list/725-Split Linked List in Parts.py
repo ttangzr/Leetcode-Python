@@ -1,8 +1,5 @@
-# @Time    : 2020/6/22 15:55
-# @Author  : T-
-# @Site    : 
-# @File    : 725-Split Linked List in Parts.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from ListNode import ListNode
 

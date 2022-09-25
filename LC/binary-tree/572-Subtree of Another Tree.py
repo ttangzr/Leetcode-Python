@@ -1,8 +1,5 @@
-# @Time    : 2020/9/15 9:08
-# @Author  : T-
-# @Site    : 
-# @File    : 572-Subtree of Another Tree.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for a binary tree node.
 class TreeNode:

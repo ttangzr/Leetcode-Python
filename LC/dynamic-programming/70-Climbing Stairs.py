@@ -7,11 +7,12 @@ class Solution:
     def climbStairs(self, n: int) -> int:
         # method-1: DP
         # dp[i] = dp[i-1] + dp[i-2]
-        dp_i_2, dp_i_1, dp_i = 0, 0, 1
-        for i in range(1, n + 1):
-            dp_i_2 = dp_i_1
-            dp_i_1 = dp_i
+        if n < 2:
+            return n
+        dp_i_2, dp_i_1, dp_i = 1, 1, 0
+        for i in range(2, n + 1):
             dp_i = dp_i_1 + dp_i_2
+            dp_i_1, dp_i_2 = dp_i, dp_i_1
         return dp_i
 
 

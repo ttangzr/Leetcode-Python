@@ -1,8 +1,5 @@
-# @Time    : 2020/6/22 14:15
-# @Author  : T-
-# @Site    : 
-# @File    : 445-Add Two Numbers II.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 from utils import ListNode
 

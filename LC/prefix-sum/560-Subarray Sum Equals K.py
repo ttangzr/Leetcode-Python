@@ -38,6 +38,8 @@ class Solution:
         # [j...i] = k -> pre[i] - pre[j-1] = k -> pre[j-1] = pre[i] - k
         n = len(nums)
         hmap = collections.defaultdict(int)
+        # 前缀和为 0，个数为 1 个, e.g. nums = [3,...], k = 3
+        # 类似于preSum前置0的效果
         hmap[0] = 1
         psum, res = 0, 0
         for i in range(n):

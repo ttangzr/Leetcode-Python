@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/11/24 9:46 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 69-Sqrt(x).py
-# @Software: PyCharm
-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:18
 
 class Solution:
     def mySqrt(self, x: int) -> int:

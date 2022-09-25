@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/10/13 8:58 上午
-# @Author  : ZhirongTang
-# @Site    : 
-# @File    : 452-Minimum Number of Arrows to Burst Balloons.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 
 from typing import List

@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2021/5/8 8:38 上午
-# @Author  : T-
-# @Site    : 
-# @File    : 287-Find the Duplicate Number.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:19
 
 from typing import List
 

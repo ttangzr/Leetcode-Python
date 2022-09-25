@@ -1,8 +1,5 @@
-# @Time    : 2020/6/18 15:45
-# @Author  : T -
-# @Site    : 
-# @File    : 160. Intersection of Two Linked Lists.py
-# @Software: PyCharm
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:30
 
 # Definition for singly-linked list.
 class ListNode(object):

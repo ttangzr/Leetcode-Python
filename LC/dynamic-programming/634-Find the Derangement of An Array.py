@@ -16,9 +16,9 @@ class Solution(object):
         if n == 1:
             return 0
         dp = [0] * (n + 1)
-        dp[0] = 1
         dp[1] = 0
-        for i in range(2, n + 1):
+        dp[2] = 1
+        for i in range(3, n + 1):
             dp[i] = int(((i - 1) * (dp[i - 2] + dp[i - 1])) % (1e9+7))
         return dp[n]
 

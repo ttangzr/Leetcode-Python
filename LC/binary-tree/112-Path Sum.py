@@ -1,8 +1,7 @@
-# @Time    : 2020/9/6 10:56
-# @Author  : T-
-# @Site    : 
-# @File    : 112-Path Sum.py
-# @Software: PyCharm
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Author  : Zhirong Tang
+# @Time    : 2022/08/25 21:20
 
 # Definition for a binary tree node.
 class TreeNode:
